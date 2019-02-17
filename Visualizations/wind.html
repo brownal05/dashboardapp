@@ -9,12 +9,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a href="index.html"> <span class="navbar-brand ml-5 mb-0 h0">SeaData</span></a>
+                <a href="../index.html"> <span class="navbar-brand ml-5 mb-0 h0">SeaData</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,14 +25,14 @@
                                     Plots                                   
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="Visualizations/temperature.html">Temperature</a>
-                                    <a class="dropdown-item" href="Visualizations/humidity.html">Humidty</a>
-                                    <a class="dropdown-item" href="Visualizations/cloud.html">Cloud Cover</a>
-                                    <a class="dropdown-item" href="Visualizations/wind.html">Wind Speed</a>
+                                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                                    <a class="dropdown-item" href="humidity.html">Humidty</a>
+                                    <a class="dropdown-item" href="cloud.html">Cloud Cover</a>
+                                    <a class="dropdown-item" href="wind.html">Wind Speed</a>
                                 </div>
                         </li>
                         <li class="nav-item active">
-                          <a class="nav-link" href="comps.html">Comparison <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="../comps.html">Comparison <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="data.html">Data</a>
@@ -40,21 +40,24 @@
                     </ul>
                 </div>
     </nav>
+        <!--background-->
+    <div class = background>
       <!--Cards-->
-      <div class = "container-fluid">
+      <div class = "container-fluid ml-5">
         <div class="row">
                 <!--Main Card-->
                 <div class="col-md-7 pl-5 mt-5 mb-5">
                     <div class = "card bg-dark text-white"  style="max-width: 80%">
 
-                      <div class="card-header mb-3">Summary : Latitude vs. X </div>
+                      <div class="card-header mb-3">Wind Speeds </div>
 
-                          <a href="#"><img class = "card-img-top" src = "Latitude/Temp.png"></a>
+                          <a href="#"><img class = "card-img-top mb-4" src = "../Latitude/Wind.png" ></a>
+
                           <div class="card-body">
-                            <p class="card-text">We set out to find out how different aspects of the weather relate to the latitudes of the the Earth. As you are likely aware the Earth is round and tilted, at about 23.4 degrees, on its axis in  the Sun. We took weather data from the OpenWeatherMap API against 500 randomly selected cities across the Earth.</p>
-                            <p class="card-text">We then plotted different weather aspects against the latitudes of these cities using Matplotlib. Here you will be able to see a visual representation of our findings against <a href="temperature.html">temperature</a>, <a href="clouds.html">cloudiness</a>, <a href="wind.html">wind speed</a>, and <a href="humidity.html">humidty</a> . If you wish please also take a look at the data that we collected to draw these visualizations. </p>
-                          </div>
+                              <p>There is nothing significant in the relationship betwen latitude and wind speed. The wind is consistently about 5 knots for most of the planet though the northnern hemisphere was slighlty more windy. Again this is consitent with winter. 
 
+                                </p>
+                              </div>
                     </div>
                   </div>  
                   <!--Main Card End-->
@@ -73,16 +76,16 @@
                             </ol>
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                               <a href="Visualizations/wind.html"> <img class="d-block w-100" src="Latitude/Wind.png" alt="First slide"></a>
+                               <a href="wind.html"> <img class="d-block w-100" src="../Latitude/Wind.png" alt="Wind vs Latitude Graph"></a>
                               </div>
                               <div class="carousel-item">
-                               <a href="Visualizations/humidity.html"> <img class=" w-100" src="Latitude/Humidity.png" alt="Second slide"></a>
+                               <a href="humidity.html"> <img class=" w-100" src="../Latitude/Humidity.png" alt="Humidity vs Latitude Graph"></a>
                               </div>
                               <div class="carousel-item">
-                               <a href="Visualizations/cloud.html"> <img class="d-block w-100" src="Latitude/Clouds.png" alt="Third slide"></a>
+                               <a href="cloud.html"> <img class="d-block w-100" src="../Latitude/Clouds.png" alt="Clouds vs Latitude Graph"></a>
                               </div>
                               <div class="carousel-item">
-                                  <a href="Visualizations/temperature.html"> <img class="d-block w-100" src="Latitude/Temp.png" alt="Third slide"></a>
+                                  <a href="temperature.html"> <img class="d-block w-100" src="../Latitude/Temp.png" alt="Wind vs Latitude Graph"></a>
                                  </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -100,23 +103,23 @@
                           </div>
                           <div id="carouselSecondIndicators" class="carousel slide pb-3 pl-2" data-ride="carousel">
                               <ol class="carousel-indicators">
-                                <li data-target="#carouselSecondIndicators" data-slide-to="0" ></li>
+                                <li data-target="#carouselSecondIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselSecondIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselSecondIndicators" data-slide-to="2" class="active"></li>
+                                <li data-target="#carouselSecondIndicators" data-slide-to="2" ></li>
                                 <li data-target="#carouselSecondIndicators" data-slide-to="3"></li>
                               </ol>
                               <div class="carousel-inner">
-                                     <div class="carousel-item active">
-                                      <a href="Visualizations/humidity.html"> <img class=" w-100" src="Latitude/Humidity.png" alt="Second slide"></a>
+                                     <div class="carousel-item active ">
+                                      <a href="humidity.html"> <img class=" w-100" src="../Latitude/Humidity.png" alt="Second slide"></a>
                                      </div>
                                      <div class="carousel-item">
-                                      <a href="Visualizations/cloud.html"> <img class="d-block w-100" src="Latitude/Clouds.png" alt="Third slide"></a>
+                                      <a href="cloud.html"> <img class="d-block w-100" src="../Latitude/Clouds.png" alt="Third slide"></a>
                                      </div>
                                      <div class="carousel-item ">
-                                        <a href="Visualizations/wind.html"> <img class="d-block w-100" src="Latitude/Wind.png" alt="First slide"></a>
+                                        <a href="wind.html"> <img class="d-block w-100" src="../Latitude/Wind.png" alt="First slide"></a>
                                        </div>
                                      <div class="carousel-item">
-                                         <a href="Visualizations/temperature.html"> <img class="d-block w-100" src="Latitude/Temp.png" alt="Third slide"></a>
+                                         <a href="temperature.html"> <img class="d-block w-100" src="../Latitude/Temp.png" alt="Third slide"></a>
                                         </div>
                               </div>
                               <a class="carousel-control-prev" href="#carouselSecondIndicators" role="button" data-slide="prev">
@@ -140,7 +143,10 @@
         </div>
       </div>
         <!--Cards End-->
-       
+    </div>  <!--Background-->
+
+
+        
 </body>
         
 

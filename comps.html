@@ -4,9 +4,103 @@
 <head>
   <meta charset="UTF-8">
   <title>SeaX</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
-FILLLER
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="index.html"> <span class="navbar-brand ml-5 mb-0 h0">SeaData</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Plots                                   
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="Visualizations/temperature.html">Temperature</a>
+                                    <a class="dropdown-item" href="Visualizations/humidity.html">Humidty</a>
+                                    <a class="dropdown-item" href="Visualizations/cloud.html">Cloud Cover</a>
+                                    <a class="dropdown-item" href="Visualizations/wind.html">Wind Speed</a>
+                                </div>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+    </nav>
+        <!--background-->
+    <div class = background>
+      <!--Cards-->
+      <div class = "container">
+        <!--First Row-->
+        <div class="row">
+                <!--Card Left Top-->
+                <div class="col-md-6 mt-2">
+                      
+                      <div class = "card bg-dark text-white " >
+                        <div class = "card-header mb-3">Cloudiness</div>
+                        <a href="Visualizations/cloud.html"><img class = "card-img-top ml-2 mb-5" src = "Latitude/Clouds.png" alt = "Graph of clouds basis Latitude"></a>
+                      </div>
+                  </div>  
+                  <!--END Card Left Top-->
+                  <!--Card Right Top-->
+                  <div class="col-md-6 mt-2">
+                      
+                      <div class = "card bg-dark text-white ">
+                        <div class = "card-header mb-3">Temperature</div>
+                        <a href="Visualizations/temperature.html"><img class = "card-img-top ml-2 mb-5" src = "Latitude/Temp.png" alt = "Graph of clouds basis Latitude"></a>
+                      </div>
+                  </div>
+                  <!--END card Right Top-->
+
+
+        </div> <!--End Frist Row-->
+        <div class="row"> <!--Second Row-->
+            <!--Card Left Bottom-->
+            <div class="col-md-6 mt-2 mb-5">
+
+                <div class = "card bg-dark text-white" >
+                  <div class = "card-header mb-3">humidity</div>
+                  <a href="Visualizations/humidity.html"><img class = "card-img-top ml-2 mb-5" src = "Latitude/Humidity.png" alt = "Graph of clouds basis Latitude"></a>
+                </div>
+            </div>
+            <!--END Left Bottom-->
+            <div class="col-md-6 mt-2">
+
+                <div class = "card bg-dark text-white ">
+                  <div class = "card-header mb-3">humidity</div>
+                  <a href="Visualizations/wind.html"><img class = "card-img-top ml-2 mb-5" src = "Latitude/Wind.png" alt = "Graph of clouds basis Latitude"></a>
+                </div>
+            </div>
+            <!--END Left Bottom-->
+
+          </div> <!--End Second Row-->
+
+      </div>
+        <!--Cards End-->
+    </div>  <!-- END Background-->
+
+
+        
+</body>
+        
+<footer>
+@Copyright Wayward Arbitrage LLC
+
+</footer>
+            
+   
+<!--globe  Photo by Adolfo Félix on Unsplash <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@adolfofelix?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Adolfo Félix"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Adolfo Félix</span></a>-->
+<!--Photo by Glenn Carstens-Peters on Unsplash <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@glenncarstenspeters?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Glenn Carstens-Peters"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Glenn Carstens-Peters</span></a>-->
