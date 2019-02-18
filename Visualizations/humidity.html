@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SeaX</title>
+  <title>Weather X - Humidity</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -14,13 +14,13 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a href="../index.html"> <span class="navbar-brand ml-5 mb-0 h0">SeaData</span></a>
+                <a href="../index.html"> <span class="navbar-brand ml-5 mb-0 h0">Weather X</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Plots                                   
                                 </a>
@@ -31,7 +31,7 @@
                                     <a class="dropdown-item" href="wind.html">Wind Speed</a>
                                 </div>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                           <a class="nav-link" href="../comps.html">Comparison <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -41,29 +41,29 @@
                 </div>
     </nav>
       <!--Cards-->
-      <div class = "container-fluid ml-5">
+      <div class = "container-fluid">
         <div class="row">
                 <!--Main Card-->
-                <div class="col-md-7 pl-5 mt-5 mb-5">
-                    <div class = "card bg-dark text-white"  style="max-width: 80%">
+                <div class="col-md-7 big-card">
+                    <div class = "card cards bg-dark text-white">
 
-                      <div class="card-header mb-3">Max Humidity </div>
+                      <div class="card-header">Max Humidity </div>
 
-                          <a href="#"><img class = "card-img-top mb-4" src = "../Latitude/Humidity.png" ></a>
+                          <a href="#"><img class = "card-img-top " src = "../Latitude/Humidity.png" ></a>
 
                           <div class="card-body">
-                              <p>There is only one significant relationship found between lattitude and the four weather measurments that we analyzed. Temperature follows as one would expect, getting warmer as the lattidue approaches zero. As one would expect, the weather becomes warmer the closer we come to the equator. There do exist outliers in the southern equator which can likely be attributed to arid climate zones. This could be further studied with our data set. We can also garner from the temperature graph that in January the northern lattitudes are very cold and the southern latidues remain above freezing. This is consistant with winter being in the the northern hemisphere.</p>
+                              <p> There is litte relationship between Latitude and humidity. Supprisingly a large portion of the planet is very humid. We do notice that a conecntration of around 80% humidity between the  latitudes of 30 degrees and 50 degrees.   </p>
                               </div>
                     </div>
                   </div>  
                   <!--Main Card End-->
 
                   <!--Carousel -->
-                  <div class = "col-md-5 mt-5 mb-5">
-                    <div class = "card bg-dark text-white mb-5"  style="max-width: 60%">
+                  <div class = "col-md-5 big-card">
+                    <div class = "card cards bg-dark text-white"  >
 
-                        <div class="card-header mb-3">Visulaizations </div>
-                        <div id="carouselIndicators" class="carousel slide pb-3 pl-2" data-ride="carousel">
+                        <div class="card-header">Visulaizations </div>
+                        <div id="carouselIndicators" class="carousel slide " data-ride="carousel">
                             <ol class="carousel-indicators">
                               <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
                               <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -97,7 +97,7 @@
                                 <span class="sr-only">Next</span>
                               </a>
                           </div>
-                          <div id="carouselSecondIndicators" class="carousel slide pb-3 pl-2" data-ride="carousel">
+                          <div id="carouselSecondIndicators" class="carousel slide " data-ride="carousel">
                               <ol class="carousel-indicators">
                                 <li data-target="#carouselSecondIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselSecondIndicators" data-slide-to="1"></li>
